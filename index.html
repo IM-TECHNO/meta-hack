@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+
+    .masked {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 150px;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <input type="text" id="searchInput" placeholder="Search for opportunities or contacts...">
+  <table id="dataTable">
+    <tr>
+      <th>Opportunity Name</th>
+      <th>Opportunity Description</th>
+      <th>Opportunity Close Date</th>
+      <th>Associated Account Name</th>
+      <th>Name of Most Recent Contact</th>
+      <th>Contact Email</th>
+      <th>Contact Number</th>
+    </tr>
+    <tr>
+      <td>Opportunity 1</td>
+      <td class="masked">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae lectus vel quam tempor congue a euismod sapien.</td>
+      <td>2022-01-01</td>
+      <td>Account 1</td>
+      <td>Contact 1</td>
+      <td class="masked">contact1@email.com</td>
+      <td class="masked">(555) 555-5555</td>
+    </tr>
+    <tr>
+      <td>Opportunity 2</td>
+      <td class="masked">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae lectus vel quam tempor congue a euismod sapien.</td>
+      <td>2022-02-01</td>
+      <td>Account 2</td>
+      <td>Contact 2</td>
+      <td class="masked">contact2@email.com</td>
+      <td class="masked">(555) 555-5556</td>
+    </tr>
+    <tr>
+        <td>Opportunity 3</td>
+        <td class="masked">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae lectus vel quam tempor congue a euismod sapien.</td>
+        <td>2022-02-01</td>
+        <td>Account 2</td>
+        <td>Contact 2</td>
+        <td class="masked">contact2@email.com</td>
+        <td class="masked">(555) 555-5556</td>
+      </tr>
+      <tr>
+        <td>Opportunity 4</td>
+        <td class="masked">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae lectus vel quam tempor congue a euismod sapien.</td>
+        <td>2022-02-01</td>
+        <td>Account 2</td>
+        <td>Contact 2</td>
+        <td class="masked">contact2@email.com</td>
+        <td class="masked">(555) 555-5556</td>
+      </tr>
+      <tr>
+        <td>Opportunity 5</td>
+        <td class="masked">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae lectus vel quam tempor congue a euismod sapien.</td>
+        <td>2022-02-01</td>
+        <td>Account 2</td>
+        <td>Contact 2</td>
+        <td class="masked">contact2@email.com</td>
+        <td class="masked">(555) 555-5556</td>
+      </tr>
+      <tr>
+        <td>Opportunity 6</td>
+        <td class="masked">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae lectus vel quam tempor congue a euismod sapien.</td>
+        <td>2022-02-01</td>
+        <td>Account 2</td>
+        <td>Contact 2</td>
+        <td class="masked">contact2@email.com</td>
+        <td class="masked">(555) 555-5556</td>
+      </tr>
+      <tr>
+        <td>Opportunity 7</td>
+        <td class="masked">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae lectus vel quam tempor congue a euismod sapien.</td>
+        <td>2022-02-01</td>
+        <td>Account 2</td>
+        <td>Contact 2</td>
+        <td class="masked">contact2@email.com</td>
+        <td class="masked">(555) 555-5556</td>
+      </tr>
+      <tr>
+        <td>Opportunity 8</td>
+        <td class="masked">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae lectus vel quam tempor congue a euismod sapien.</td>
+        <td>2022-02-01</td>
+        <td>Account 2</td>
+        <td>Contact 2</td>
+        <td class="masked">contact2@email.com</td>
+        <td class="masked">(555) 555-5556</td>
+      </tr>
+      <tr>
+        <td>Opportunity 9</td>
+        <td class="masked">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae lectus vel quam tempor congue a euismod sapien.</td>
+        <td>2022-02-01</td>
+        <td>Account 2</td>
+        <td>Contact 2</td>
+        <td class="masked">contact2@email.com</td>
+        <td class="masked">(555) 555-5556</td>
+      </tr>
+      <tr>
+        <td>Opportunity 9</td>
+        <td class="masked">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae lectus vel quam tempor congue a euismod sapien.</td>
+        <td>2022-02-01</td>
+        <td>Account 2</td>
+        <td>Contact 2</td>
+        <td class="masked">contact2@email.com</td>
+        <td class="masked">(555) 555-5556</td>
+      </tr>
+      <tr>
+        <td>Opportunity 10</td>
+        <td class="masked">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae lectus vel quam tempor congue a euismod sapien.</td>
+        <td>2022-02-01</td>
+        <td>Account 2</td>
+        <td>Contact 2</td>
+        <td class="masked">contact2@email.com</td>
+        <td class="masked">(555) 555-5556</td>
+      </tr>
+      <tr>
+        <td>Opportunity 11</td>
+        <td class="masked">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae lectus vel quam tempor congue a euismod sapien.</td>
+        <td>2022-02-01</td>
+        <td>Account 2</td>
+        <td>Contact 2</td>
+        <td class="masked">contact2@email.com</td>
+        <td class="masked">(555) 555-5556</td>
+      </tr>
+      <tr>
+        <td>Opportunity 12</td>
+        <td class="masked">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae lectus vel quam tempor congue a euismod sapien.</td>
+        <td>2022-02-01</td>
+        <td>Account 2</td>
+        <td>Contact 2</td>
+        <td class="masked">contact2@email.com</td>
+        <td class="masked">(555) 555-5556</td>
+      </tr>
+  </table>
+  <script>
+    $(document).ready(function() {
+      $("#searchInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#dataTable tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+  </script>
+</body>
+</html>
