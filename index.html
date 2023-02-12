@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <style>
     table {
       width: 100%;
@@ -12,9 +13,13 @@
       text-align: left;
       padding: 8px;
     }
+    
+    tr:nth-child(odd) {
+      background-color: rgb(255, 255, 255);
+    }
 
     tr:nth-child(even) {
-      background-color: #dddddd;
+      background-color: lightblue;
     }
 
     .masked {
@@ -27,8 +32,9 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" href="assets/style.css" />
 </head>
-<body>  
-  <img src="assets/Logo.png"  class="search-container1" />
+<body>
+  <div id="loader" class="center"></div>  
+  <img src="https://i.ibb.co/DQzNLqR/Metazord-Logo.png"  class="logo" />
   <input type="text" id="searchInput" class="search-container" placeholder="Search for opportunities or contacts..."> 
   <table id="dataTable">
     <tr>
@@ -83,7 +89,7 @@
         <td>Santhosh</td>
         <td>Raghul Rawat</td>
         <td class="masked">rrawat5602@gmail.com</td>
-        <td class="masked">(453) 365-7412</td>S
+        <td class="masked">(453) 365-7412</td>
       </tr>
       <tr>
         <td>Retail and sales</td>
@@ -114,7 +120,7 @@
       </tr>
       <tr>
         <td>Civil Engineering</td>
-        <td class="masked">Site Management, Project Management, Fire risk assessor, Quantity Surveyor. .</td>
+        <td class="masked">Site Management, Project Management, Fire risk assessor, Quantity Surveyor.</td>
         <td>2023-05-20</td>
         <td>Bala Vignesh</td>
         <td>Christopher</td>
@@ -123,7 +129,7 @@
       </tr>
       <tr>
         <td>Transportation</td>
-        <td class="masked">Truck Driver, Taxi Driver, Heavy Loader, Logistics</td>
+        <td class="masked">Truck Driver, Taxi Driver, Heavy Loader, Logistics.</td>
         <td>2023-06-05</td>
         <td>Siranjivi</td>
         <td>Kanchana</td>
@@ -150,7 +156,7 @@
       </tr>
       <tr>
         <td>Digital Marketing</td>
-        <td class="masked">Graphic design, Digital media, Photography, Content Writer</td>
+        <td class="masked">Graphic design, Digital media, Photography, Content Writer.</td>
         <td>2023-06-25</td>
         <td>Harini</td>
         <td>Rahul</td>
@@ -168,5 +174,20 @@
       });
     });
   </script>
+  <script>
+    document.onreadystatechange = function() {
+        if (document.readyState !== "complete") {
+            document.querySelector(
+            "body").style.visibility = "hidden";
+            document.querySelector(
+            "#loader").style.visibility = "visible";
+        } else {
+            document.querySelector(
+            "#loader").style.display = "none";
+            document.querySelector(
+            "body").style.visibility = "visible";
+        }
+    };
+</script>
 </body>
 </html>
